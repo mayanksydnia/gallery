@@ -1,6 +1,9 @@
 Gallery::Application.routes.draw do
   resources :dibgalleries
   root to: 'dibgalleries#index'
+  match '/dispall', to: 'dibgalleries#dispall'
+  match '/layoutdispall', to: 'layouts#dispall'
+
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

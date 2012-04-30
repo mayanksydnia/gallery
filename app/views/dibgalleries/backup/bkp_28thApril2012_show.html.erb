@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @dibgallery.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @dibgallery.description %>
+</p>
+
+<p>
+  <b>Photo:</b>
+  <a rel="example_group" href="<%= @dibgallery.photo1.url(:original) %>" class="fancybox"><%= image_tag @dibgallery.photo1.url(:small) %></a>
+</p>
+
+<p>
+  <b>Photo:</b>
+  <a rel="example_group" href="<%= @dibgallery.photo2.url(:original) %>" class="fancybox"><%= image_tag @dibgallery.photo2.url(:small) %></a>
+</p>
+
+<p>
+  <b>Photo:</b>
+  <a rel="example_group" href="<%= @dibgallery.photo3.url(:original) %>" class="fancybox"><%= image_tag @dibgallery.photo3.url(:small) %></a>
+</p>
+
+<p>
+  <b>Photo:</b>
+  <a rel="example_group" href="<%= @dibgallery.photo4.url(:original) %>" class="fancybox"><%= image_tag @dibgallery.photo4.url(:small) %></a>
+</p>
+
+<p>
+  <b>Photo:</b>
+  <a rel="example_group" href="<%= @dibgallery.photo5.url(:original) %>" class="fancybox"><%= image_tag @dibgallery.photo5.url(:small) %></a>
+</p>
+
+<p>
+  <b>Photo:</b>
+  <a rel="example_group" href="<%= @dibgallery.photo6.url(:original) %>" class="fancybox"><%= image_tag @dibgallery.photo6.url(:small) %></a>
+</p>
+<%= link_to 'Edit', edit_dibgallery_path(@dibgallery) %> |
+<%= link_to 'Back', dibgalleries_path %>

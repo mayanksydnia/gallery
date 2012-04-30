@@ -11,17 +11,16 @@
 		<td colspan="2"><%= @dibgallery.description %></td>
 	</tr>
 	<tr>
-		<td><a rel="example_group" href="<%= @dibgallery.photo1.url(:original) %>" class="fancybox"><%= image_tag @dibgallery.photo1.url(:thumb) %></a></td>
-		<td><a rel="example_group" href="<%= @dibgallery.photo2.url(:original) %>" class="fancybox"><%= image_tag @dibgallery.photo2.url(:thumb) %></a></td>
-		<td><a rel="example_group" href="<%= @dibgallery.photo3.url(:original) %>" class="fancybox"><%= image_tag @dibgallery.photo3.url(:thumb) %></a></td>
+		<td><a rel="example_group" href="<%= @dibgallery.photo1.url(:original) %>" class="fancybox"><%= (image_tag @dibgallery.photo1.url(:thumb), :border => "0") %></a></td>
+		<td><a rel="example_group" href="<%= @dibgallery.photo2.url(:original) %>" class="fancybox"><%= (image_tag @dibgallery.photo2.url(:thumb), :border => "0") %></a></td>
+		<td><a rel="example_group" href="<%= @dibgallery.photo3.url(:original) %>" class="fancybox"><%= (image_tag @dibgallery.photo3.url(:thumb), :border => "0") %></a></td>
 	</tr>
 	<tr>
-		<td><a rel="example_group" href="<%= @dibgallery.photo4.url(:original) %>" class="fancybox"><%= image_tag @dibgallery.photo4.url(:thumb) %></a></td>
-		<td><a rel="example_group" href="<%= @dibgallery.photo5.url(:original) %>" class="fancybox"><%= image_tag @dibgallery.photo5.url(:thumb) %></a></td>
-		<td><a rel="example_group" href="<%= @dibgallery.photo6.url(:original) %>" class="fancybox"><%= image_tag @dibgallery.photo6.url(:thumb) %></a></td>
+		<td><a rel="example_group" href="<%= @dibgallery.photo4.url(:original) %>" class="fancybox"><%= (image_tag @dibgallery.photo4.url(:thumb), :border => "0") %></a></td>
+		<td><a rel="example_group" href="<%= @dibgallery.photo5.url(:original) %>" class="fancybox"><%= (image_tag @dibgallery.photo5.url(:thumb), :border => "0") %></a></td>
+		<td><a rel="example_group" href="<%= @dibgallery.photo6.url(:original) %>" class="fancybox"><%= (image_tag @dibgallery.photo6.url(:thumb), :border => "0") %></a></td>
 	</tr>
 	<tr>
 		<td colspan="3" align="center"><%= link_to 'Edit', edit_dibgallery_path(@dibgallery) %> | <%= link_to 'Back', dibgalleries_path %></td>
 	</tr>
 </table>
-

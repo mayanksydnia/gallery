@@ -14,10 +14,19 @@ class DibgalleriesController < ApplicationController
   # GET /dibgalleries/1.json
   def show
     @dibgallery = Dibgallery.find(params[:id])
-
+    
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @dibgallery }
+    end
+  end
+  
+  def dispall
+    @dibgalleries = Dibgallery.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @dibgalleries }
     end
   end
 
@@ -25,7 +34,7 @@ class DibgalleriesController < ApplicationController
   # GET /dibgalleries/new.json
   def new
     @dibgallery = Dibgallery.new
-
+    
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @dibgallery }

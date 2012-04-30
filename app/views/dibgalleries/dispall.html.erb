@@ -1,0 +1,15 @@
+<% @dibgalleries.each do |dibgallery| %>
+  <tr>
+    <td><%= dibgallery.title %></td>
+    <td><%= dibgallery.description %></td>
+    <td><%= image_tag dibgallery.photo1.url(:small) %></td>
+    <td><%= image_tag dibgallery.photo2.url(:small) %></td>
+    <td><%= image_tag dibgallery.photo3.url(:small) %></td>
+    <td><%= image_tag dibgallery.photo4.url(:small) %></td>
+    <td><%= image_tag dibgallery.photo5.url(:small) %></td>
+    <td><%= image_tag dibgallery.photo6.url(:small) %></td>
+    <td><%= link_to 'Show', dibgallery %></td>
+    <td><%= link_to 'Edit', edit_dibgallery_path(dibgallery) %></td>
+    <td><%= link_to 'Destroy', dibgallery, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
